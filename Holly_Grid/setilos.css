@@ -1,0 +1,63 @@
+
+
+  .item {
+                color: white;
+                text-align: center;
+            }
+            .itema {
+                background-color: crimson;
+            }
+            .itemb {
+                background-color: blue;
+            }
+            .itemc {
+                background-color: darkblue;
+            }
+            .itemd {
+                background-color: green;
+            }
+            .iteme {
+                background-color: brown;
+            }
+            .itemf {
+                background-color: black;
+            }
+
+/*-------------------------*/
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 75px 50px 1fr 50px;
+    grid-template-areas: 
+    'header header header header header'
+    'nav nav nav nav nav'
+    'main main main main sidebar'
+    'footer footer footer footer footer';
+}
+
+.itema {
+    background-color: tomato;
+    grid-area:header;
+}
+
+.itemb {
+    background-color: mediumorchid;
+    grid-area: nav;
+}
+
+.itemc {
+    background-color: royalblue;
+    grid-area: main;
+}
+
+.itemd {
+    background-color: mediumseagreen;
+    grid-area: sidebar;
+}
+
+.iteme {
+    background-color: orange;
+    grid-area: footer;
+}
